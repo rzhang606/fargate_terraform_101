@@ -19,5 +19,5 @@ Application Load Balancer (ALB)
 - alb listener (dependency of ecs service)
 
 Security
--create a security group for each the load balancer and the ecs tasks
--ecs tasks group should only allow inbound access from the ALB
+- create a security group for each the load balancer and the ecs tasks
+- ecs tasks group should only allow inbound access from the ALB
