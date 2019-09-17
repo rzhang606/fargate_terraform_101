@@ -21,7 +21,12 @@ variable "az_count" {
 
 variable "app_image" {
     description = "The docker image to run in ECS cluster"
-    default = "rzhang606/friendlyhello:firsttry"
+    default = "rzhang606/friendlyhello:redis"
+}
+
+variable "redis_port" {
+    description = "port where redis lives"
+    default = "6379"
 }
 
 variable "app_port" {
@@ -32,6 +37,11 @@ variable "app_port" {
 variable "app_count" {
     description = "NUmber of docker containers to run"
     default = 1
+}
+
+variable "redis_count" {
+    description = "Number of redis tasks to run"
+    default = 2
 }
 
 variable "health_check_path" {
